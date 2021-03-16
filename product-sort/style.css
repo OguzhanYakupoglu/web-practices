@@ -1,0 +1,16 @@
+﻿.grid {
+    display: flex;
+    /*flex-flow: wrap;*/
+}
+.grid-item {
+    width: 25%;
+}
+.yesil{
+    background-color:green;
+}
+.gri{
+    background-color:grey;
+}
+.mavi{
+    background-color:dodgerblue;
+}
