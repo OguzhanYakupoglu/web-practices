@@ -1,0 +1,286 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>Taxi</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <link href="./bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="./style/index.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Header -->
+    <header class="topnav">
+        <a href="#">
+            <span style="background-color:#f7c119"><i style="padding:1px 4px;" class="fas fa-taxi"></i></span>
+            <b>T<span style="color:#f7c119">A</span>XI</b>
+        </a>
+        <nav id="myLinks">
+            <a href="#">content</a>
+            <a href="#">content</a>
+            <a href="#">content</a>
+            <a href="#">content</a>
+        </nav>
+        <a class="icon" onclick="toggleNav();">
+            <i class="fa fa-bars"></i>
+        </a>
+    </header>
+
+    <!--TopImage-->
+    <div style="position:relative; text-align:center">
+        <img style="width:100%; max-height:600px;" src="./Images/Backgrounds/CityBlur.jpg" alt="CityPhoto" />
+        <h2 class="title">BOOK YOUR TAXI NOW!</h2>
+        <h3 class="number">+123 4567 8900</h3>
+        <img class="taxiCar" src="./Images/Cars/taxi.png" alt="TaxiPhoto" />
+    </div>
+
+    <!-- Reservation -->
+    <section class="container-fluid" style="background-color:#f7c119">
+        <div class="container" style="padding:7.5rem 1rem;">
+            <div class="row">
+                <!-- Info -->
+                <div class="col-12 col-md-6">
+                    <div style="padding: 2rem 0; margin-right: 25px; margin-left: 25px;">
+                        <h5>BEST IN CITY</h5>
+                        <h3>To Book Taxi Please Use The Quick Reservation Form</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed aliquet justo. Quisque ut mollis est. Morbi sed laoreet enim. Donec eget tortor nulla. Ut dolor leo, convallis eget ipsum et, rutrum ornare sem. Sed volutpat commodo elit in rutrum. Donec fermentum facilisis odio, sit amet accumsan sapien placerat vel. </p>
+                        <button style="border:none; background-color:black; color:white; padding: 0.75rem 2rem">BUTTON</button>
+                    </div>
+                </div>
+                <!-- Form -->
+                <div class="col-12 col-md-6 form-group">
+                    <div style="background-color: black; padding: 2rem 0; margin-right: 25px; margin-left: 25px;">
+                        <form style="margin-left: 2rem; margin-right: 2rem;" action="/" method="post">
+                            <input style="margin-bottom:1rem;" class="form-control" type="text" name="name" placeholder="Enter your name" />
+                            <input style="margin-bottom:1rem;" class="form-control" type="text" name="phone" placeholder="Enter your phone" />
+                            <textarea style="margin-bottom:1rem;resize:none" class="form-control" rows="6" cols="50" placeholder="Enter your message"></textarea>
+                            <input style="border:none; border-radius:0; background-color:white; color:black; padding:0.75rem 2rem;" type="submit" name="submit" value="SUBMIT" />
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apps -->
+    <section class="container-fluid bg-secondary text-white">
+        <div class="container text-center" style="padding:30px 0px;">
+            <div class="row">
+                <div class="col-9" style="display:flex; align-items:center; text-align:start">
+                    <i style="font-size:4rem; color:#f7c119" class="fas fa-mobile-alt"></i>
+                    <p class="m-0" style="font-size:1.2rem; display:inline; padding-left:1rem;">Book and manage trips via our mobile apps</p>
+                </div>
+
+                <div class="col-3">
+                    <i style="font-size:4rem;" class="fab fa-apple col-12 col-md-5"></i>
+                    <i style="font-size:4rem;" class="fab fa-google-play col-12 col-md-5"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Work cycle -->
+    <section class="container-fluid" style="padding-top: 5rem;">
+        <div class="container text-center">
+            <div class="row">
+                <h2>How Does It Work</h2>
+                <div class="col-12 col-md-4 text-center" style="padding:3rem;">
+                    <img style="width:128px; height:128px;" src="./Images/Icons/taxi.png" alt="taxiIcon" />
+                    <p style="font-size:1.3rem;">Enter your pickup point and time, select your car.</p>
+                </div>
+                <div class="col-12 col-md-4 text-center" style="padding:3rem;">
+                    <img style="width:128px; height:128px;" src="./Images/Icons/wallet.png" alt="taxiIcon" />
+                    <p style="font-size:1.3rem;">Select your preferred payment method.</p>
+                </div>
+                <div class="col-12 col-md-4 text-center" style="padding:3rem;">
+                    <img style="width:128px; height:128px;" src="./Images/Icons/driver.png" alt="taxiIcon" />
+                    <p style="font-size:1.3rem;">Our taxi driver picks you up at the given location and time.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Work cycle2 -->
+    <section class="text-center text-white" style="position:relative; overflow:hidden">
+        <img style="width:1920px;" src="./Images/Backgrounds/CityDark.jpg" alt="City" />
+        <div style="position:absolute; top:15%; left:50%; transform:translate(-50%, -50%)">
+            <h5>WE DO THE BEST</h5>
+            <h2>What You Wish</h2>
+            <p>Duis ornare sapien at arcu rutrum</p>
+        </div>
+        <div class="container text-start" style="position:absolute; top:60%; left:50%; transform:translate(-50%, -50%); color:#f7c119">
+            <div class="row">
+                <div class="col-12 col-md-6 mb-4">
+                    <div style="width:64px; height:64px; background-color:#f7c119; border-radius:50%; text-align:center; position:absolute">
+                        <i style="color: black; margin-top: 15px; font-size: 2rem;" class="fas fa-home"></i>
+                    </div>
+                    <div style="margin-left:100px;">
+                        <h5 style="font-weight:bold">HOME PICKUP</h5>
+                        <p style="color:white; font-size:18px">Mauris porta, nisi a porttitor varius, ipsum lorem condimentum leo, placerat ante ac, imperdiet ante. </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                    <div style="width:64px; height:64px; background-color:#f7c119; border-radius:50%; text-align:center; position:absolute">
+                        <i style="color: black; margin-top: 15px; font-size: 2rem;" class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div style="margin-left:100px;">
+                        <h5 style="font-weight:bold">HOME PICKUP</h5>
+                        <p style="color:white; font-size:18px">Mauris porta, nisi a porttitor varius, ipsum lorem condimentum leo, placerat ante ac, imperdiet ante. </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                    <div style="width:64px; height:64px; background-color:#f7c119; border-radius:50%; text-align:center; position:absolute">
+                        <i style="color: black; margin-top: 15px; font-size: 2rem;" class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div style="margin-left:100px;">
+                        <h5 style="font-weight:bold">HOME PICKUP</h5>
+                        <p style="color:white; font-size:18px">Mauris porta, nisi a porttitor varius, ipsum lorem condimentum leo, placerat ante ac, imperdiet ante. </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                    <div style="width:64px; height:64px; background-color:#f7c119; border-radius:50%; text-align:center; position:absolute">
+                        <i style="color: black; margin-top: 15px; font-size: 2rem;" class="fas fa-running"></i>
+                    </div>
+                    <div style="margin-left:100px;">
+                        <h5 style="font-weight:bold">HOME PICKUP</h5>
+                        <p style="color:white; font-size:18px">Mauris porta, nisi a porttitor varius, ipsum lorem condimentum leo, placerat ante ac, imperdiet ante. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cars -->
+    <section class="container" style="padding-top:5rem; padding-bottom:5rem">
+        <div class="row">
+            <div class="col-12 col-md-4 p-0 mb-2">
+                <h3>Taxi</h3>
+                <img style="width:70%; margin:3rem 0" src="./Images/Cars/car1.png" alt="Car1" />
+                <div>
+                    <h6><b>The Taxi You Know</b></h6>
+                    <ul>
+                        <li>Price based on taximeter</li>
+                        <li>Executed by local taxi fleets</li>
+                        <li>Online and offline payment</li>
+                        <li>24/7 support hotline</li>
+                    </ul>
+                </div>
+                
+            </div>
+            <!--  -->
+            <div class="col-12 col-md-4 p-0 mb-2">
+                <h3>Economy+</h3>
+                <img style="width:70%; margin:3rem 0" src="./Images/Cars/car2.png" alt="Car2" />
+                <div>
+                    <h6><b>For Budget Travelers</b></h6>
+                    <ul>
+                        <li>Fixed price</li>
+                        <li>English-speaking driver</li>
+                        <li>Automated flight and train tracking</li>
+                        <li>45 minutes waiting time after landing</li>
+                        <li>Pickup with name sign in arrivals hall</li>
+                        <li>Children seats available on request</li>
+                        <li>Online and offline payment</li>
+                        <li>24/7 support hotline</li>
+
+                    </ul>
+                </div>
+                
+            </div>
+            <!--  -->
+            <div class="col-12 col-md-4 p-0 mb-2">
+                <h3>Business Class</h3>
+                <img style="width:70%; margin:3rem 0" src="./Images/Cars/car3.png" alt="Car3" />
+                <div>
+                    <h6><b>Business Traveler's Favourite</b></h6>
+                    <ul>
+                        <li>Black car guaranteed</li>
+                        <li>Fixed price</li>
+                        <li>English-speaking driver</li>
+                        <li>Automated flight and train tracking</li>
+                        <li>45 minutes waiting time after landing</li>
+                        <li>Pickup with name sign in arrivals hall</li>
+                        <li>Children seats available on request</li>
+                        <li>Online and offline payment</li>
+                        <li>24/7 support hotline</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="text-center text-white" style="position:relative; overflow:hidden">
+        <img style="width:1920px; height:600px;" src="./Images/Backgrounds/NY.jpg" alt="NYCity" />
+        <div class="container">
+            <div style="position:absolute; top:15%; left:50%; transform:translate(-50%, -50%)">
+                <h5>HAPPY CLIENTS</h5>
+                <h2>User's Testimonials</h2>
+            </div>
+            <!--  -->
+            <div class="container text-start" style="position:absolute; top:60%; left:50%; transform:translate(-50%, -50%); color:#f7c119">
+                <div class="row">
+                    <div class="col-12 col-md-6 mb-4">
+                        <img style="border-radius:50%; position:absolute; width:64px;" src="./Images/Person/man.jpg" alt="man" />
+                        <div style="margin-left:75px;">
+                            <p style="color:white; font-size:18px">This was one of the best experiences I have ever had with a cab company. I had problems at the airport and the driver stayed with me for over an hour and helped me sort everything out.</p>
+                            <h5 style="font-weight:bold">POLLY WALTER</h5>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-4">
+                        <img style="border-radius:50%; position:absolute; width:64px;" src="./Images/Person/man.jpg" alt="man" />
+                        <div style="margin-left:75px;">
+                            <p style="color:white; font-size:18px">Thank you for such fabulous service! Mauris porta, nisi a porttitor varius, ipsum lorem condimentum leo, laoreet faucibus nisl nunc finibus felis. Integer in sapien pulvinar. </p>
+                            <h5 style="font-weight:bold">CONNOR QUINN</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section style="background-color:#f7c119">
+        <div class="container" style="padding-top:5rem; padding-bottom:5rem">
+            <div class="row text-center">
+                <h6 style="font-size:2rem;">WE ARE READY TO TAKE OUR CALL 24 HOURS, 7 DAYS!</h6>
+                <h1 class="botNumber"><b>+123 4567 8900</b></h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment -->
+    <section style="background-color:#1a1a1a">
+        <div class="container text-white" style="padding-top:4rem; padding-bottom:4rem;">
+            <h2 class="text-center" style="margin-bottom:4rem; font-size:2.5rem"><b>How I Can Pay</b></h2>
+            <div class="row">
+                <div class="col-12 col-md-6" style="margin-bottom:4rem; padding-right:150px">
+                    <h3>Individual Customers</h3>
+                    <p>We accepts all major payment methods including MasterCard, Visa and American Express.</p>
+                </div>
+                <div class="col-12 col-md-6" style="margin-bottom:4rem; padding-right:150px">
+                    <h3>Corporate Customers</h3>
+                    <p>We supports corporate payment methods such as AirPlus. Upon special request, payment by invoice can be made available for our partners and event organisers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="padding-top:2.5rem; padding-bottom:2.5rem; background-color:#333333; color:white">
+        <div class="text-center">
+            <p class="m-0">Oguzhan YAKUPOGLU</p>
+        </div>
+    </footer>
+    <script src="./bootstrap/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./javaScript/navBar.js"></script>
+</body>
+</html>

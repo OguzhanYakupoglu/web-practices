@@ -1,0 +1,111 @@
+﻿.botNumber {
+    font-size: 4rem;
+}
+
+@media (max-width: 550px) {
+    .botNumber {
+        font-size: 2rem;
+    }
+}
+.topnav {
+    overflow: hidden;
+    background-color: white;
+}
+
+    .topnav #myLinks {
+        display: none
+    }
+
+    .topnav a.icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav a {
+        display: block;
+        color: black;
+        padding: 14px 16px;
+        font-size: 1.5rem;
+        text-decoration: none;
+    }
+
+        .topnav a:hover {
+            background-color: rgba(255,255,255,0.8) !important;
+            color: black;
+        }
+
+
+/*Geniş ekran*/
+@media(min-width: 600px) {
+    .topnav a.icon {
+        display: none;
+    }
+
+    .topnav #myLinks {
+        display: inline;
+    }
+
+    .topnav a {
+        float: left
+    }
+}
+.taxiCar {
+    position: absolute;
+    left: 50%;
+    top: 82%;
+    transform: translate(-50%, -50%);
+    width: 650px;
+}
+
+.title {
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, -50%);
+    color: #f7c119;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.number {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+@media (max-width: 1220px) {
+    .number {
+        font-size: 3rem;
+    }
+
+    .taxiCar {
+        width: 55%;
+        top: 85%;
+    }
+}
+
+@media (max-width: 768px) {
+    .number {
+        font-size: 2rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 560px) {
+    .number {
+        font-size: 1rem;
+    }
+
+    .title {
+        font-size: 1rem;
+    }
+}
