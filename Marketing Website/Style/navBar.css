@@ -1,0 +1,55 @@
+﻿.topnav {
+    overflow: hidden;
+    background-color: black;
+}
+
+    .topnav #myLinks {
+        display: none
+    }
+
+#searchIcon {
+    display: none;
+}
+
+.topnav a.menu-icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+    .topnav a:hover {
+        background-color: rgba(255,255,255,0.8) !important;
+        color: black;
+    }
+
+
+/*Geniş ekran*/
+@media(min-width: 600px) {
+    .topnav a.menu-icon {
+        display: none;
+    }
+    #searchIcon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav #myLinks {
+        display: inline;
+    }
+
+    .topnav a {
+        float: left
+    }
+}

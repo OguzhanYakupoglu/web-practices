@@ -1,0 +1,115 @@
+﻿p {
+    margin: 15px 0;
+}
+
+h5, h4, h3, h2, h1 {
+    margin: 10px 0;
+}
+
+.imageTop {
+    width: 100%;
+    max-height: 600px;
+}
+
+.btnInImage {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+}
+
+    .btnInImage:hover {
+        background-color: #009688;
+    }
+
+.teamImg {
+    border-radius: 100%;
+    width: 50%;
+    border: 3px solid grey;
+    transition: .3s all;
+}
+
+    .teamImg:hover {
+        opacity: 0.7;
+    }
+
+.cardPadding {
+    padding: 0 0.5rem !important;
+    background-color: transparent;
+}
+
+.card-header {
+    font-size: 1.5rem;
+}
+
+.shadowBox:hover {
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+}
+
+.card-body ul {
+    padding: 0;
+    margin-bottom: 0 !important;
+}
+
+.card-body li {
+    line-height: 1.5;
+    list-style: none;
+    border-bottom: 1px solid;
+    border-color: rgba(0,0,0,0.2);
+    padding: 1rem;
+}
+
+.card-body button {
+    border: none;
+    color: white;
+    background-color: #009688;
+    padding: 0.75rem 1.5rem;
+}
+
+    .card-body button:hover {
+        background-color: rgba(255,255,255,0.8) !important;
+        color: black;
+    }
+
+.form-group input {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid;
+}
+
+.sendBtn {
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 0.5rem 1rem;
+    float: right;
+}
+
+    .sendBtn:hover {
+        color: black;
+        background-color: #ddd;
+    }
+
+.checkBox {
+    width: 24px;
+    height: 24px;
+}
+
+footer {
+    padding: 2rem 1rem;
+}
+
+    footer i {
+        color: white;
+        background-color: #009688;
+        padding: 1rem;
+    }
+
+        footer i:hover {
+            color: black;
+            background-color: #ddd;
+        }
