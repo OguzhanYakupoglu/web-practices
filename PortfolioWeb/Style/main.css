@@ -1,0 +1,61 @@
+.navLink{
+    color: white;
+}
+.navLink:hover{
+    color:dimgray;
+}
+.cardBackground{
+    background: rgba(169, 169, 169, 0.2);
+}
+.cardBackground:hover{
+    background: rgba(169, 169, 169, 0.4);
+}
+@media (min-width: 768px) {
+    #WideImages {
+        margin-top: 3rem;
+    }
+}
+.WideImage {
+    width: 100%;
+    height: auto;
+}
+.navbarBackground{
+    background: rgba(15, 15, 15, 0.9);
+}
+@media (min-width: 768px) {
+.fixedNavbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }}
+
+.footerBackground{
+    background: rgba(15, 15, 15, 0.1);
+}
+
+.footerTextColor{
+    color: #666666;;
+}
+.footerTextColor:hover{
+    color: #333333;;
+}
+ @media(max-width: 768px){
+    .footerOnMobie{
+        display: none;
+    } }
+.socialIcons{
+    width: 30px;
+}
+.slick-prev {
+    left: 10px;
+}
+.slick-next {
+    right: 10px;
+}
+.slick-arrow{
+    height:100%;
+    width:4rem;
+    z-index:10;
+}
