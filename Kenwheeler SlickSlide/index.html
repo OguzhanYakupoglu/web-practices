@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+
+<html dir="ltr" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <title></title>
+
+    <!-- slick css -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <!--Add the new slick-theme.css if you want the default styling-->
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link href="bootstrap.css" rel="stylesheet" />
+    <link href="main.css" rel="stylesheet" />
+</head>
+<body class="bg-secondary">
+    <div class="container">
+        <!-- Slider -->
+        <div class="row">
+            <div class="slider border border-light mt-5">
+                <div class="col-12" style="position:relative; text-align:center; color:white;">
+                    <img src="Images/first.jpg" alt="Alternate Text" />
+                    <h4>Image1</h4>
+                </div>
+                <div class="col-12" style="position:relative; text-align:center; color:white;">
+                    <img src="Images/first.jpg" alt="Alternate Text" />
+                    <h4>Image2</h4>
+                </div>
+                <div class="col-12" style="position:relative; text-align:center; color:white;">
+                    <img src="Images/first.jpg" alt="Alternate Text" />
+                    <h4>Image3</h4>
+                </div>
+                <div class="col-12" style="position:relative; text-align:center; color:white;">
+                    <img src="Images/first.jpg" alt="Alternate Text" />
+                    <h4>Image4</h4>
+                </div>
+                <div class="col-12" style="position:relative; text-align:center; color:white;">
+                    <img src="Images/first.jpg" alt="Alternate Text" />
+                    <h4>Image5</h4>
+                </div>
+                <div class="col-12" style="position:relative; text-align:center; color:white;">
+                    <img src="Images/first.jpg" alt="Alternate Text" />
+                    <h4>Image6</h4>
+                </div>
+                <div class="col-12" style="position:relative; text-align:center; color:white;">
+                    <img src="Images/first.jpg" alt="Alternate Text" />
+                    <h4>Image7</h4>
+                </div>
+                <div class="col-12" style="position:relative; text-align:center; color:white;">
+                    <img src="Images/first.jpg" alt="Alternate Text" />
+                    <h4>Image8</h4>
+                </div>
+                <div class="col-12" style="position:relative; text-align:center; color:white;">
+                    <img src="Images/first.jpg" alt="Alternate Text" />
+                    <h4>Image9</h4>
+                </div>
+            </div>
+        </div>
+        <!-- SliderNav -->
+        <div class="row">
+            <div class="sliderNav border border-light mt-2">
+                <div class="col-12">
+                    <img src="Images/first.jpg" alt="Alternate Text" />
+                </div>
+                <div class="col-12">
+                    <img src="Images/first.jpg" alt="Alternate Text" />
+                </div>
+                <div class="col-12">
+                    <img src="Images/first.jpg" alt="Alternate Text" />
+                </div>
+                <div class="col-12">
+                    <img src="Images/first.jpg" alt="Alternate Text" />
+                </div>
+                <div class="col-12">
+                    <img src="Images/first.jpg" alt="Alternate Text" />
+                </div>
+                <div class="col-12">
+                    <img src="Images/first.jpg" alt="Alternate Text" />
+                </div>
+                <div class="col-12">
+                    <img src="Images/first.jpg" alt="Alternate Text" />
+                </div>
+                <div class="col-12">
+                    <img src="Images/first.jpg" alt="Alternate Text" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+
+    <script>
+        $('.slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            autoplay: true,
+            asNavFor: '.sliderNav',
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: true,
+                    }
+                }
+            ]
+        });
+        $('.sliderNav').slick({
+            slidesToShow: 7,
+            slidesToScroll: 1,
+            asNavFor: '.slider',
+            dots: true,
+            swipeToSlide: true,
+            centerMode: true,
+            focusOnSelect: true,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 3,
+                        arrows: false,
+                    }
+                }
+            ]
+        });
+    </script>
+</body>
+</html>
