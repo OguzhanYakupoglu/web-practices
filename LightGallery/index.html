@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LightGallery</title>
+    <link href="./LightGallery/css/lightgallery.css" rel="stylesheet" />
+    <link href="./Bootstrap/bootstrap.css" rel="stylesheet" />
+    <style>
+        img {
+            margin-bottom: 3px;
+            width: 164px;
+            overflow:hidden;
+            transition: .3s all;
+        }
+        @media(max-width: 480px) {
+            img {
+                width: 100%;
+            }
+        }
+        img:hover {
+            opacity: 0.8;
+            transform:scale(0.9);
+        }
+        a {
+            color:transparent;
+        }
+        a:hover {
+            color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <!-- Thumbnails -->
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div id="thumbnials" class="col-9">
+                <a href="./Images/Images/AboutMeWide.jpg">
+                    <img src="./Images/Images/AboutMeWide.jpg" />
+                </a>
+                <a href="./Images/Images/ArtWide.jpg">
+                    <img src="./Images/Images/ArtWide.jpg" />
+                </a>
+                <a href="./Images/Images/CodeWide.jpg">
+                    <img src="./Images/Images/CodeWide.jpg" />
+                </a>
+                <a href="./Images/Images/AboutMeWide.jpg">
+                    <img src="./Images/Images/AboutMeWide.jpg" />
+                </a>
+                <a href="./Images/Images/ArtWide.jpg">
+                    <img src="./Images/Images/ArtWide.jpg" />
+                </a>
+                <a href="./Images/Images/CodeWide.jpg">
+                    <img src="./Images/Images/CodeWide.jpg" />
+                </a>
+                <a href="./Images/Images/AboutMeWide.jpg">
+                    <img src="./Images/Images/AboutMeWide.jpg" />
+                </a>
+                <a href="./Images/Images/ArtWide.jpg">
+                    <img src="./Images/Images/ArtWide.jpg" />
+                </a>
+                <a href="./Images/Images/CodeWide.jpg">
+                    <img src="./Images/Images/CodeWide.jpg" />
+                </a>
+                <a href="./Images/Images/AboutMeWide.jpg">
+                    <img src="./Images/Images/AboutMeWide.jpg" />
+                </a>
+                <a href="./Images/Images/ArtWide.jpg">
+                    <img src="./Images/Images/ArtWide.jpg" />
+                </a>
+                <a href="./Images/Images/CodeWide.jpg">
+                    <img src="./Images/Images/CodeWide.jpg" />
+                </a>
+                <a href="./Images/Images/AboutMeWide.jpg">
+                    <img src="./Images/Images/AboutMeWide.jpg" />
+                </a>
+                <a href="./Images/Images/ArtWide.jpg">
+                    <img src="./Images/Images/ArtWide.jpg" />
+                </a>
+            </div>
+            <hr />
+            <div class="row">
+                <!-- Vimeo/Youtube -->
+                <div id="video-gallery">
+                    <a href="https://www.youtube.com/watch?v=hS5CfP8n_js" data-poster="Images/Images/AboutMeWide.jpg">
+                        <img src="Images/Images/AboutMeWide.jpg" />
+                    </a>
+                    <a href="https://vimeo.com/1084537" data-poster="Images/Images/ArtWide.jpg">
+                        <img src="Images/Images/ArtWide.jpg" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./LightGallery/js/lightgallery.js"></script>
+    <script src="./LightGallery/js/lg-thumbnail.js"></script>
+    <script src="./LightGallery/js/lg-video.js"></script>
+    <script src="./LightGallery/js/lg-zoom.js"></script>
+
+    <script>
+        $('#thumbnials').lightGallery({
+            thumbnail: true,
+            animateThumb: true,
+            showThumbByDefault: true
+        });
+    </script>
+    <script>
+        $('#video-gallery').lightGallery({
+            loadYoutubeThumbnail: true,
+            youtubeThumbSize: 'default',
+            loadVimeoThumbnail: true,
+            vimeoThumbSize: 'thumbnail_medium',
+        }); 
+    </script>
+
+</body>
+</html>
